@@ -1,9 +1,8 @@
-
 <?php/*
 	pastebin.php
 	Part of the Open Pastebin project - version 0.2-development
 	10/8/2004
-	Ville Särkkälä - villeveikko@users.sourceforge.net
+	Ville Sï¿½rkkï¿½lï¿½ - villeveikko@users.sourceforge.net
 
 	This is the main/index page. It allows the user to enter
 	the text, and then goes to submit.php.
@@ -36,6 +35,10 @@
                 }
             ?>
             </select><br>
+Paste title:<br><input type="text" name="paste_title" /><br />
+Author name:<br><input type="text" name="paste_author" /><br />
+
+
             Enter text here:<br>
             <textarea name="input_text" rows="25" cols="80"></textarea>
             <br><br>
