@@ -1,9 +1,8 @@
-
 <?php/*
 	view.php
 	Part of the Open Pastebin project - version 0.2-development
 	10/8/2004
-	Ville Särkkälä - villeveikko@users.sourceforge.net
+	Ville Sï¿½rkkï¿½lï¿½ - villeveikko@users.sourceforge.net
 
 	The ID is given as a query string, for example:
 	http://domain.com/pastebin/view.php?id=349
@@ -14,15 +13,8 @@
 
 	Released under GNU GENERAL PUBLIC LICENSE
 	Version 2, June 1991 -  or later
-*/?>
-
-<html>
-    <head>
-        <title>Open Pastebin</title>
-    </head>
-    <body>
-        <?php
-            require ( "database.php" );
+*/
+          require ( "database.php" );
             require ( "highlight.php" );
             require ( "xmlparser.php" );
             if ( !isset ( $_REQUEST['id'] ) ) die ( "ID not specified!" );
@@ -36,6 +28,16 @@
             $highlighted_text = apply_rule ( $rules ['RULE'][$array ['Language']], $text );
             
             $lines = explode ( "\n", $highlighted_text );
+
+?>
+
+<html>
+    <head>
+        <title>Open Pastebin .::. <?php echo $array['ID']; ?></title>
+    </head>
+    <body>
+        <?php
+          
         ?>
         <table border="1" cellpadding="2">
             <tr>
