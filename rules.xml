@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<root>
+
+<rule name="None" />
+
+<rule name="C/C++">
+	<!-- Keywords -->
+	<class style="bold" color="blue">
+		<token>asm</token>
+		<token>auto</token>
+		<token>bool</token>
+		<token>break</token>
+		<token>case</token>
+		<token>catch</token>
+		<token>char</token>
+		<token>class</token>
+		<token>const</token>
+		<token>const_cast</token>
+		<token>continue</token>
+		<token>default</token>
+		<token>delete</token>
+		<token>do</token>
+		<token>double</token>
+		<token>dynamic_cast</token>
+		<token>else</token>
+		<token>enum</token>
+		<token>explicit</token>
+		<token>extern</token>
+		<token>false</token>
+		<token>float</token>
+		<token>for</token>
+		<token>friend</token>
+		<token>goto</token>
+		<token>if</token>
+		<token>inline</token>
+		<token>int</token>
+		<token>long</token>
+		<token>namespace</token>
+		<token>new</token>
+		<token>operator</token>
+		<token>private</token>
+		<token>protected</token>
+		<token>public</token>
+		<token>register</token>
+		<token>reinterpret_cast</token>
+		<token>return</token>
+		<token>short</token>
+		<token>signed</token>
+		<token>sizeof</token>
+		<token>static</token>
+		<token>static_cast</token>
+		<token>struct</token>
+		<token>switch</token>
+		<token>template</token>
+		<token>this</token>
+		<token>throw</token>
+		<token>try</token>
+		<token>typedef</token>
+		<token>typeid</token>
+		<token>true</token>
+		<token>union</token>
+		<token>unsigned</token>
+		<token>using</token>
+		<token>void</token>
+		<token>volatile</token>
+		<token>while</token>
+        </class>
+
+        <!-- Comments -->
+        <class color="green">
+		<range start="/*" end="*/" />
+		<range start="//" end="\n" />
+        </class>
+
+	<!-- Strings -->
+	<class color="purple">
+		<range start='"' end='"' escape="\" />
+		<range start="'" end="'" escape="\" />
+	</class>
+
+	<!-- Preprocessor directives -->
+	<class color="gray">
+		<range start="#" end="\n" />
+	</class>
+
+	<!-- Symbols -->
+	<class color="blue" style="bold">
+		<token any="1">*</token>
+		<token any="1">/</token>
+		<token any="1">+</token>
+		<token any="1">-</token>
+		<token any="1">\</token>
+		<token any="1">[</token>
+		<token any="1">]</token>
+		<token any="1">(</token>
+		<token any="1">)</token>
+		<token any="1">=</token>
+		<token any="1">!</token>
+		<token any="1">&gt;</token>
+		<token any="1">&lt;</token>
+		<token any="1">{</token>
+		<token any="1">}</token>
+		<token any="1">.</token>
+		<token any="1">;</token>
+		<token any="1">,</token>
+		<token any="1">:</token>
+		<token any="1">&amp;</token>
+	</class>
+</rule>
+</root>
