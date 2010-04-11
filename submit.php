@@ -1,9 +1,8 @@
-
 <?php/*
 	submit.php
 	Part of the Open Pastebin project - version 0.2-development
 	10/8/2004
-	Ville Särkkälä - villeveikko@users.sourceforge.net
+	Ville Sï¿½rkkï¿½lï¿½ - villeveikko@users.sourceforge.net
 
 	This is the script that submits the text to the database.
 	It then gives the user a link to the entry.
@@ -14,7 +13,7 @@
 
 <html>
     <head>
-        <title>Open Pastebin</title>
+        <title>Pastebin</title>
     </head>
     <body>
         <?php
