@@ -14,7 +14,7 @@
 <html>
 <link rel="stylesheet" type="text/css" href="Website.css" />
     <head>
-        <title>Open Pastebin</title>
+        <title>Pastebin</title>
     </head>
     <body>
         <?php
@@ -37,13 +37,10 @@
             </select><br>
 Paste title:<br><input type="text" name="paste_title" /><br />
 Author name:<br><input type="text" name="paste_author" /><br />
-
-
-            Enter text here:<br>
+  Enter text here:<br>
             <textarea name="input_text" rows="25" cols="80"></textarea>
             <br><br>
             <input type="submit" value="Submit">
         </form>
-        <a href="http://www.sourceforge.net/projects/openpastebin/">Open Pastebin</a>
     </body>
 </html>
